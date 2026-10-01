@@ -6,23 +6,21 @@
     <title>Document</title>
 </head>
 <body>
-    <a href="http://www.swin.edu.au"><img src ="logo.png"></a>
+    <a href="http://www.swin.edu.au"><img src ="logo.png" width="100" height="50"></a>
     <h1>CWA Help Desk Appointment</h1>
     <p>The Help Desk is located in ATC620. Open 10:30 to 19:00 Monday to Friday</p>
     <p>Check Blackboard for when CWA tutors will be there.</p>
     <form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
         <fieldset>
             <legend>Student details</legend>
-            <p><label for student_id>Student ID</label>
-              <input type="text" name="Student_ID" id="for student_id" required="required" pattern="[0-9]{7,10}">
+            <p><label for="student_id">Student ID</label>
+              <input type="text" name="Student_ID" id="student_id" required="required" pattern="[0-9]{7,10}">
             </p>
             <p>
-                <label>Given Name 
-                    <input type="text" name="Given Name" maxlength="15" required="required" pattern="[A-Za-z]+"> 
-                </label>
-                <label>Family Name 
-                    <input type="text" name="Family Name" maxlength="15" required="required" pattern="[A-Za-z]+"> 
-                </label>
+                <label for="gv">Given Name</label>
+                    <input id="gv" type="text" name="Given Name" maxlength="15" required="required" pattern="[A-Za-z]+"> 
+                <label for="fn">Family Name</label>
+                    <input id="fn" type="text" name="Family Name" maxlength="15" required="required" pattern="[A-Za-z]+"> 
             </p>
         </fieldset>
         <fieldset>
@@ -36,6 +34,9 @@
                 <select id="your_tutor" name="Your tutor" required="required">
                     <option value="">Please Select</option>
                     <option value="Tiger">Tiger</option>
+                    <option value="Dung">Dung</option>
+                    <option value="Rory">Rory</option>
+                    <option value="Wilson">Wilson</option>
                 </select>
             </p>
         </fieldset>
